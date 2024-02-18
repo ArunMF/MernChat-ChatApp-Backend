@@ -29,7 +29,7 @@ exports.signIn = async(req,res)=>{
         const userCheck = await users.findOne({id})
         if(userCheck){
             if(password==userCheck.password){
-                res.status(200).json({message:"Login successful."})
+                res.status(200).json({message:"Welcome to MernChat 😊"})
             }
             else{
                 res.status(404).json({message:"Invalid password!"})
